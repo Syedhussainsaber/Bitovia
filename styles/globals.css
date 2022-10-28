@@ -1,0 +1,153 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.menu:hover {
+  color: rgb(197, 197, 197) !important;
+}
+.brandImg {
+  width: 75px;
+  height: 75px;
+  border: solid 3px gold;
+  border-radius: 100%;
+}
+
+/* About Page */
+
+.pageHead {
+  text-align: center !important;
+  font-size: 3em;
+  color: white;
+  padding: 20px;
+}
+.containerAbout {
+  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+  height: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden;
+}
+.aboutContent {
+  font-size: 1.3em;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutPara {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutImg {
+  width: 88%;
+  height: 77.58%;
+  margin-top: 12px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  display: grid;
+  font-size: 18px;
+}
+
+#app {
+  align-self: center;
+  justify-self: center;
+  background-color: #eee;
+  text-align: center;
+  width: 300px;
+  padding: 27px 18px;
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  padding-bottom: 18px;
+  font-size: 18px;
+}
+
+input,
+button {
+  padding: 9px;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+/* Dashboard  */
+.containerDashboard {
+  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* login */
+.containerLogin {
+  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.loginForm {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  display: flex;
+  /* justify-content: center; */
+}
+.signInBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* RoadMap */
+.containerRoadMap {
+  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+  height: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: gray;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
