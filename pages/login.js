@@ -13,7 +13,7 @@ export default function Login() {
         const { elements } = event.target
 
         // the magic code
-        const did = await new Magic(NEXT_PUBLIC_MAGIC_PUB_KEY).auth.loginWithMagicLink({
+        const did = await new Magic(process.env.NEXT_PUBLIC_MAGIC_PUB_KEY).auth.loginWithMagicLink({
             email: elements.email.value,
         })
 
