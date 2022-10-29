@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 import { Magic } from "magic-sdk"
 import Head from "next/head"
 import Script from "next/script"
+
 export default function Login() {
     const router = useRouter()
     // pages/login.js
