@@ -3,7 +3,6 @@ import { useRouter } from "next/router"
 import { Magic } from "magic-sdk"
 import Head from "next/head"
 import Script from "next/script"
-
 export default function Login() {
     const router = useRouter()
     // pages/login.js
@@ -12,10 +11,10 @@ export default function Login() {
         event.preventDefault()
 
         const { elements } = event.target
-            email: elements.email.value,
 
         // the magic code
-        const did = await new Magic("pk_live_32FA6DF5AAFA9BF3").auth.loginWithMagicLink({
+        const did = await new Magic(process.env.NEXT_PUBLIC_MAGIC_PUB_KEY).auth.loginWithMagicLink({
+            email: elements.email.value,
         })
 
         // Once we have the did from magic, login with our own API
@@ -30,7 +29,7 @@ export default function Login() {
             // can redirect to the dashboard!
             router.push("/dashboard")
         } else {
-
+            alert("Invalid Details")
             /* handle errors */
         }
     }
