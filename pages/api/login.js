@@ -16,7 +16,7 @@ export default async (req, res) => {
   // Author a couple of cookies to persist a user's session
   const token = await Iron.seal(
     user,
-    process.env.ENCRYPTION_SECRET,
+    "This is a secret magic key bitovia",
     Iron.defaults,
   )
   CookieService.setTokenCookie(res, token)
