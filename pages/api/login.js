@@ -10,7 +10,7 @@ export default async (req, res) => {
   // exchange the did from Magic for some user data
   const did = req.headers.authorization.split('Bearer').pop().trim()
   const user = await new Magic(
-    process.env.MAGIC_SECRET_KEY,
+    MAGIC_SECRET_KEY,
   ).users.getMetadataByToken(did)
 
   // Author a couple of cookies to persist a user's session
