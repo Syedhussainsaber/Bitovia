@@ -8,7 +8,7 @@ export default async (req, res) => {
   try {
     user = await Iron.unseal(
       CookieService.getAuthToken(req.cookies),
-      process.env.ENCRYPTION_SECRET,
+      "This is a secret magic key bitovia",
       Iron.defaults,
     )
   } catch (error) {
