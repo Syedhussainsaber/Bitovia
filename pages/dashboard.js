@@ -146,7 +146,7 @@ const dashboard = () => {
                 <div className="stakeContainer">
                     <p className="stakePlan"> 3 months Plan</p>
                     <img
-                        src="/Bitovia.png"
+                        src="/BITOVIA.png"
                         alt="Bitovia"
                         style={{ width: "52px", margin: "15px" }}
                     />
