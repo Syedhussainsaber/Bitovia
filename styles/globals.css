@@ -1,153 +1,241 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: black;
-  color: white;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%) !important;
+    color: white;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Navbar */
 
 .menu:hover {
-  color: rgb(197, 197, 197) !important;
+    color: rgb(197, 197, 197) !important;
 }
 .brandImg {
-  width: 75px;
-  height: 75px;
-  border: solid 3px gold;
-  border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    border: solid 3px gold;
+    border-radius: 100%;
 }
 
 /* About Page */
 
 .pageHead {
-  text-align: center !important;
-  font-size: 3em;
-  color: white;
-  padding: 20px;
+    text-align: center !important;
+    font-size: 3em;
+    color: white;
+    padding: 20px;
 }
 .containerAbout {
-  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
-  height: 100% !important;
-  width: 100% !important;
-  overflow-x: hidden;
+    background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+    height: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden;
 }
 .aboutContent {
-  font-size: 1.3em;
-  padding: 10px;
-  line-height: 1.5;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .aboutPara {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .aboutImg {
-  width: 88%;
-  height: 77.58%;
-  margin-top: 12px;
+    width: 88%;
+    height: 77.58%;
+    margin-top: 12px;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  height: 100vh;
-  display: grid;
-  font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+        Cantarell, "Helvetica Neue", sans-serif;
+    height: 100vh;
+    display: grid;
+    font-size: 18px;
 }
 
 #app {
-  align-self: center;
-  justify-self: center;
-  background-color: #eee;
-  text-align: center;
-  width: 300px;
-  padding: 27px 18px;
-  color: black;
+    align-self: center;
+    justify-self: center;
+    background-color: #eee;
+    text-align: center;
+    width: 300px;
+    padding: 27px 18px;
+    color: black;
 }
 
 h1 {
-  margin: 0;
-  padding-bottom: 18px;
-  font-size: 18px;
+    margin: 0;
+    padding-bottom: 18px;
+    font-size: 18px;
 }
 
 input,
 button {
-  padding: 9px;
-  font-size: 18px;
-  margin-bottom: 9px;
+    padding: 9px;
+    font-size: 18px;
+    margin-bottom: 9px;
 }
 
 /* Dashboard  */
 .containerDashboard {
-  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
-  height: 100% !important;
-  width: 100% !important;
+    background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+    height: 100% !important;
+    width: 100% !important;
 }
 
+.stakeContainer {
+    margin: 55px;
+    border: 3px solid white;
+    border-radius: 15px;
+    height: 390px;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stakePlan {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 4px;
+    font-family: fantasy;
+}
+.stakeAmount {
+    font-size: 2.2em;
+    font-family: sans-serif;
+}
+
+.stakeFeature {
+    display: flex;
+    justify-content: space-around;
+}
+#stakingAmount {
+    border-radius: 8px;
+    border: none;
+    height: 45px;
+    background: #fffbfa;
+}
+.stakeBtns {
+    margin: 8px;
+    width: 400px;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+.claimBtn {
+    margin-right: 12px;
+    width: 100px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.stakeBtn {
+    margin-left: 20px;
+    width: 100px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* refer and Earn */
+
+.containtainerReferAndEarn {
+    background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%) !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.referreDetails {
+    margin: 35px 35px 12px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.referBtn {
+    background-color: #ffd412;
+    /* border: solid white 2px; */
+    border: none;
+    color: black;
+    border-radius: 2px;
+}
+
+#referreeInput {
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    height: 45px;
+}
+.referContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    margin-top: 45px;
+}
 /* login */
 .containerLogin {
-  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+    background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 .loginForm {
-  margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .check {
-  display: flex;
-  /* justify-content: center; */
+    display: flex;
+    /* justify-content: center; */
 }
 .signInBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* RoadMap */
 .containerRoadMap {
-  background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
-  height: 100% !important;
-  width: 100% !important;
-  overflow-x: hidden;
+    background-image: linear-gradient(135deg, #c33764 10%, #1d2671 100%);
+    height: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden;
 }
 
 /* Footer */
 .footer {
-  background-color: black;
-  color: gray;
-  text-align: center;
-  padding: 15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: white;
+        background: black;
+    }
 }
