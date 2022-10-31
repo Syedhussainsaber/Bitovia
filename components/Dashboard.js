@@ -60,9 +60,9 @@ const Dashboard = () => {
                 style={{ backgroundColor: "black", zIndex: 1 }}
             >
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        Dashboard
-                    </a>
+                    <Link href="/dashboard">
+                        <a className="navbar-brand">Dashboard</a>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -77,48 +77,17 @@ const Dashboard = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">
-                                    Staking
-                                </a>
+                                <Link href="/dashboard">
+                                    <a className="nav-link text-white">Staking</a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Link
-                                </a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a
-                                    className="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Dropdown
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Action
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Another action
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Something else here
-                                        </a>
-                                    </li>
-                                </ul>
+                                <Link href="/referAndEarn">
+                                    <a className="nav-link text-white">Refer And Earn</a>
+                                </Link>
                             </li>
                         </ul>
-                        {console.log(user)}
+                        {loading ? "loading" : console.log(user)}
                         {/* <p>{user.email}</p> */}
 
                         {/* <input
